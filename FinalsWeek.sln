@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalsWeek", "Assembly-CSharp.csproj", "{551F3A64-93B5-3AA5-5C7B-9F8700366864}"
 EndProject
 Global
