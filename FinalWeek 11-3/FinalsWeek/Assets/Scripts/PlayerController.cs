@@ -35,11 +35,24 @@ public class PlayerController : MonoBehaviour {
         //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(facing), Time.deltaTime * rotateSpeed);
 
         if (moveHorizontal > 0) {
-            //turn right (clockwise)
-            transform.Rotate(0, Time.deltaTime * cw, 0);
+            if (moveVertical < 0) {
+                //turn left (counterclockwise)
+                transform.Rotate(0, Time.deltaTime * ccw, 0);
+            } else {
+                //turn right (clockwise)
+                transform.Rotate(0, Time.deltaTime * cw, 0);
+            }
         } else if (moveHorizontal < 0) {
-            //turn left (counterclockwise)
-            transform.Rotate(0, Time.deltaTime * ccw, 0);
+            if (moveVertical < 0)
+            {
+                //turn right (clockwise)
+                transform.Rotate(0, Time.deltaTime * cw, 0);
+            }
+            else
+            {
+                //turn left (counterclockwise)
+                transform.Rotate(0, Time.deltaTime * ccw, 0);
+            }
         }
 
         //move forward or backward
