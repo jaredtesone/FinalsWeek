@@ -6,9 +6,9 @@ using UnityEngine.AI;
 public class Monster : MonoBehaviour {
     [SerializeField]
     GameObject Player;
-    Player player;
+  
     NavMeshAgent navMeshAgent;
-    public float  speed = 3.5f;
+    public float speed = 3.5f;
     public float acceleration =8;
     public float stoppingDistance=0.2f;
     public float angularSpeed =120;
@@ -17,7 +17,7 @@ public class Monster : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = Player.GetComponent<Player>();
+ 
         navMeshAgent = GetComponent<NavMeshAgent>();
 
 
@@ -52,7 +52,7 @@ public class Monster : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     { if(other.gameObject.tag == "Player")
         {
-            followPlayer = true;
+           // followPlayer = true;
             print("in");
         }
 
