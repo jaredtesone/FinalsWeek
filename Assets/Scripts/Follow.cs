@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Follow : MonoBehaviour {
-    [SerializeField]
-    GameObject Player;
+    //[SerializeField]
+    public GameObject Player;
+
+    bool lookAt = true;
  
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
@@ -20,5 +22,15 @@ public class Follow : MonoBehaviour {
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.position = Player.transform.position + offset;
+        //transform.rotation = Player.transform.rotation;
+
+        //if (lookAt)
+        //{
+        //    transform.LookAt(Player.transform);
+        //}
+        //else
+        //{
+        //  //  transform.rotation = Player.transform.rotation;
+        //}
     }
 }
