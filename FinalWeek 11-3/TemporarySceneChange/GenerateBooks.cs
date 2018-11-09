@@ -5,7 +5,7 @@ using UnityEngine;
 public class GenerateBooks : MonoBehaviour {
     private GameObject[] bookshelves;
     private Dictionary<GameObject, int> shelfData;
-    private Vector3[] bookSlots = new Vector3[5];
+    private Vector3[] bookSlots = new Vector3[4];
     private System.Random rand = new System.Random();
     private HashSet<int> occupied = new HashSet<int>();
     private GameObject[] books;
@@ -28,11 +28,11 @@ public class GenerateBooks : MonoBehaviour {
             shelfData.Add(bookshelves[i], 0);
         }
         //define book spawn locations in bookshelves
-        bookSlots[0] = new Vector3(depth, 1.7f, 1.47f);    //top left of bookcase
-        bookSlots[1] = new Vector3(depth, 0.7f, 0.36f);    //left of 2nd shelf down
-        bookSlots[2] = new Vector3(depth, 0.7f, -0.37f);    //right of 2nd shelf down
-        bookSlots[3] = new Vector3(depth, -0.31f, 1.11f);    //left of 3rd row down (potential bug?)
-        bookSlots[4] = new Vector3(depth, -1.31f, -1.11f);  //bottom right of bookcase
+        //bookSlots[0] = new Vector3(depth, 1.7f, 1.47f);    //top left of bookcase
+        bookSlots[0] = new Vector3(depth, 0.7f, 0.36f);    //left of 2nd shelf down
+        bookSlots[1] = new Vector3(depth, 0.7f, -0.37f);    //right of 2nd shelf down
+        bookSlots[2] = new Vector3(depth, -0.31f, 1.11f);    //left of 3rd row down (potential bug?)
+        bookSlots[3] = new Vector3(depth, -1.31f, -1.11f);  //bottom right of bookcase
         orientation.eulerAngles = new Vector3(-90, 0, -90);     //set rotation of book
 
         //create array of books
@@ -62,7 +62,7 @@ public class GenerateBooks : MonoBehaviour {
                     //store book in shelf
                     books[i].transform.SetParent(tmpShelf.transform);
                     //select random slot in bookshelf and set position, rotation, and scale
-                    int shelfSlot = rand.Next(5);
+                    int shelfSlot = rand.Next(bookSlots.Length);
                     Vector3 pos = bookSlots[shelfSlot];
                     books[i].transform.localPosition = pos;
                     books[i].transform.localRotation = orientation;
@@ -72,5 +72,20 @@ public class GenerateBooks : MonoBehaviour {
                 }
             }
         }
+        //select first book
+        int spec1 = rand.Next(numBooks);
+        books[spec1].transform.tag = "FirstBook";
+
+        //select second book
+        int spec2 = rand.Next(numBooks);
+        while (spec2 == spec1)
+            spec2 = rand.Next(numBooks);
+        books[spec2].transform.tag = "SecondBook";
+
+        //select third book
+        int spec3 = rand.Next(numBooks);
+        while (spec3 == spec1 || spec3 == spec2)
+            spec3 = rand.Next(numBooks);
+        books[spec3].transform.tag = "ThirdBook";
     }
 }
