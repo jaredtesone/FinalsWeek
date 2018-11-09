@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 8fccbde7267533e4faaebd6a1136de43
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body_Squash_Stretch_GRP
+    100002: Cube
+    100004: Cube.001
+    100006: Cube.002
+    100008: Deer_CNTRL
+    100010: Dummy
+    100012: group5 group4 group3 group2 pCube1
+    100014: group5 group4 group3 group2 pCylinder3
+    100016: helperArrow1
+    100018: helperArrow2
+    100020: helperArrow3
+    100022: helperArrow4
+    100024: helperArrowsGRP
+    100026: Hip
+    100028: Hip_Cntrl
+    100030: L_Ankle
+    100032: L_ankle_01
+    100034: L_Ankle_IK_Handle
+    100036: L_ARM_ik_handle_01
+    100038: L_Carpal
+    100040: L_Elbow_Twist
+    100042: L_Front_PV_Cntrl
+    100044: L_Front_PV_Cntrl2
+    100046: L_Front_PV_Cntrl2_GRP
+    100048: L_Front_PV_GRP
+    100050: L_hip_01
+    100052: L_Hoof_Lift_GRP
+    100054: L_Humerus
+    100056: L_Humerus_rot
+    100058: L_Humerus_rot_base
+    100060: L_knee_01
+    100062: L_RadiusUlna
+    100064: L_Rear_PV_Cntrl
+    100066: L_Rear_PV_Cntrl_GRP
+    100068: L_rib_01
+    100070: L_Rib_02
+    100072: L_Rib_03
+    100074: L_Rib_04
+    100076: L_Scapula
+    100078: L_Scapula_IK_GRP
+    100080: L_Scapula_IK_Handle
+    100082: L_Scapula_X_Rot
+    100084: L_Shoulder_Cntrl
+    100086: L_Shoulder_Transform_Grp
+    100088: L_Toe_01
+    100090: locator3
+    100092: locator4
+    100094: lumbar_01
+    100096: lumbar_02
+    100098: lumbar_03
+    100100: //RootNode
+    100102: Neck_Cntrl
+    100104: Neck_J_01
+    100106: Neck_J_02
+    100108: Neck_J_03
+    100110: Neck_J_04
+    100112: nurbsSphere1
+    100114: nurbsSphere1Base
+    100116: pCylinder4 group5 group4 group3 group2
+    100118: Pelvis
+    100120: QuickRigCharacter_Ctrl_Reference
+    100122: QuickRigCharacter_Guides1
+    100124: QuickRigCharacter_Reference
+    100126: R_Ankle
+    100128: R_ankle_01
+    100130: R_Ankle_IK_Handle
+    100132: R_ARM_ik_handle_01
+    100134: R_Carpal
+    100136: R_Elbow_Twist
+    100138: R_Front_PV_Cntrl2_GRP
+    100140: R_Front_PV_GRP
+    100142: R_hip_01
+    100144: R_Hoof_Lift_GRP
+    100146: R_Humerus
+    100148: R_Humerus_rot
+    100150: R_Humerus_rot_base
+    100152: R_knee_01
+    100154: R_RadiusUlna
+    100156: R_Rear_PV_Cntrl
+    100158: R_Rear_PV_Cntrl1
+    100160: R_Rear_PV_Cntrl2
+    100162: R_Rear_PV_Cntrl_GRP
+    100164: R_rib_01
+    100166: R_Rib_02
+    100168: R_Rib_03
+    100170: R_Rib_04
+    100172: R_Scapula
+    100174: R_Scapula_IK_GRP
+    100176: R_Scapula_IK_Handle
+    100178: R_Scapula_X_Rot
+    100180: R_Shoulder_Cntrl
+    100182: R_Shoulder_Transform_Grp
+    100184: R_Toe_01
+    100186: Root_Cntrl
+    100188: Shoulder_Cntrl
+    100190: Spine_Cntrl
+    100192: Sternum
+    100194: thoracic_01
+    100196: thoracic_02
+    100198: thoracic_03
+    100200: Thoracic_Cntrl
+    400000: Body_Squash_Stretch_GRP
+    400002: Cube
+    400004: Cube.001
+    400006: Cube.002
+    400008: Deer_CNTRL
+    400010: Dummy
+    400012: group5 group4 group3 group2 pCube1
+    400014: group5 group4 group3 group2 pCylinder3
+    400016: helperArrow1
+    400018: helperArrow2
+    400020: helperArrow3
+    400022: helperArrow4
+    400024: helperArrowsGRP
+    400026: Hip
+    400028: Hip_Cntrl
+    400030: L_Ankle
+    400032: L_ankle_01
+    400034: L_Ankle_IK_Handle
+    400036: L_ARM_ik_handle_01
+    400038: L_Carpal
+    400040: L_Elbow_Twist
+    400042: L_Front_PV_Cntrl
+    400044: L_Front_PV_Cntrl2
+    400046: L_Front_PV_Cntrl2_GRP
+    400048: L_Front_PV_GRP
+    400050: L_hip_01
+    400052: L_Hoof_Lift_GRP
+    400054: L_Humerus
+    400056: L_Humerus_rot
+    400058: L_Humerus_rot_base
+    400060: L_knee_01
+    400062: L_RadiusUlna
+    400064: L_Rear_PV_Cntrl
+    400066: L_Rear_PV_Cntrl_GRP
+    400068: L_rib_01
+    400070: L_Rib_02
+    400072: L_Rib_03
+    400074: L_Rib_04
+    400076: L_Scapula
+    400078: L_Scapula_IK_GRP
+    400080: L_Scapula_IK_Handle
+    400082: L_Scapula_X_Rot
+    400084: L_Shoulder_Cntrl
+    400086: L_Shoulder_Transform_Grp
+    400088: L_Toe_01
+    400090: locator3
+    400092: locator4
+    400094: lumbar_01
+    400096: lumbar_02
+    400098: lumbar_03
+    400100: //RootNode
+    400102: Neck_Cntrl
+    400104: Neck_J_01
+    400106: Neck_J_02
+    400108: Neck_J_03
+    400110: Neck_J_04
+    400112: nurbsSphere1
+    400114: nurbsSphere1Base
+    400116: pCylinder4 group5 group4 group3 group2
+    400118: Pelvis
+    400120: QuickRigCharacter_Ctrl_Reference
+    400122: QuickRigCharacter_Guides1
+    400124: QuickRigCharacter_Reference
+    400126: R_Ankle
+    400128: R_ankle_01
+    400130: R_Ankle_IK_Handle
+    400132: R_ARM_ik_handle_01
+    400134: R_Carpal
+    400136: R_Elbow_Twist
+    400138: R_Front_PV_Cntrl2_GRP
+    400140: R_Front_PV_GRP
+    400142: R_hip_01
+    400144: R_Hoof_Lift_GRP
+    400146: R_Humerus
+    400148: R_Humerus_rot
+    400150: R_Humerus_rot_base
+    400152: R_knee_01
+    400154: R_RadiusUlna
+    400156: R_Rear_PV_Cntrl
+    400158: R_Rear_PV_Cntrl1
+    400160: R_Rear_PV_Cntrl2
+    400162: R_Rear_PV_Cntrl_GRP
+    400164: R_rib_01
+    400166: R_Rib_02
+    400168: R_Rib_03
+    400170: R_Rib_04
+    400172: R_Scapula
+    400174: R_Scapula_IK_GRP
+    400176: R_Scapula_IK_Handle
+    400178: R_Scapula_X_Rot
+    400180: R_Shoulder_Cntrl
+    400182: R_Shoulder_Transform_Grp
+    400184: R_Toe_01
+    400186: Root_Cntrl
+    400188: Shoulder_Cntrl
+    400190: Spine_Cntrl
+    400192: Sternum
+    400194: thoracic_01
+    400196: thoracic_02
+    400198: thoracic_03
+    400200: Thoracic_Cntrl
+    2100000: initialShadingGroup3
+    2100002: lambert1
+    2100004: initialShadingGroup9
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Cube.002
+    2300006: group5 group4 group3 group2 pCube1
+    2300008: pCylinder4 group5 group4 group3 group2
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Cube.002
+    3300006: group5 group4 group3 group2 pCube1
+    3300008: pCylinder4 group5 group4 group3 group2
+    4300000: group5 group4 group3 group2 pCube1
+    4300002: pCylinder4 group5 group4 group3 group2
+    4300004: Cube.002
+    4300006: Cube.001
+    4300008: Cube
+    4300010: group5 group4 group3 group2 pCylinder3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: group5 group4 group3 group2 pCylinder3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
